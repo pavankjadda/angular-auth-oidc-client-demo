@@ -14,17 +14,17 @@ for dir in "${excludeDirs[@]}"; do
 done
 findCommand+=" -type f"
 
-# Execute the find command and replace occurrences of "angular-base" with the project name
+# Execute the find command and replace occurrences of "angular-auth-oidc-client-demo" with the project name
 eval "$findCommand" | while read -r file; do
   # Check if the file is a text file before replacing
   if file "$file" | grep -q text; then
-    sed -i '' "s/angular-base/$projectName/g" "$file"
+    sed -i '' "s/angular-auth-oidc-client-demo/$projectName/g" "$file"
     echo "Updated $file"
   fi
 done
 
-# Rename the angular-base directory to the project name
+# Rename the angular-auth-oidc-client-demo directory to the project name
 cd ..
-mv angular-base "$projectName"
-rm -rf angular-base
+mv angular-auth-oidc-client-demo "$projectName"
+rm -rf angular-auth-oidc-client-demo
 cd "$projectName" || exit

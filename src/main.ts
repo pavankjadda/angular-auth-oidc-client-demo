@@ -4,7 +4,9 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { routes } from './app/routes';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { authConfig } from './app/auth-config';
+import { provideAuth } from 'angular-auth-oidc-client';
 
 bootstrapApplication(AppComponent, {
-	providers: [importProvidersFrom(BrowserModule, RouterModule.forRoot(routes)), provideHttpClient(withFetch())],
+	providers: [provideAuth(authConfig), importProvidersFrom(BrowserModule, RouterModule.forRoot(routes)), provideHttpClient(withFetch())],
 }).catch((err) => console.error(err));

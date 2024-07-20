@@ -1,9 +1,9 @@
 {
-  "name": "angular-base",
-  "version": "18.0.0",
+  "name": "angular-auth-oidc-client-demo",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --watch --hmr --ssl=true --ssl-cert ~/localhost.pem --ssl-key ~/localhost-key.pem",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "pw:run": "URL=http://localhost:4200 npx playwright test",
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "angular-auth-oidc-client": "^18.0.1",
     "rxjs": "~7.8.1",
     "tslib": "^2.6.2",
     "zone.js": "~0.14.6"
