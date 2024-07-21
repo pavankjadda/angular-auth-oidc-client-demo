@@ -7,5 +7,4 @@ This project demonstrates the usage of [angular-auth-oidc-client](https://github
   ```shell
   npm i
   ```
-2. Run `npm run start` to start the development server and navigate to `http://localhost:4200`
-23. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Run `npm run start` to start the development server and navigate to `http://localhost:4201`

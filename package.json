@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --watch --hmr --ssl=true --ssl-cert ~/localhost.pem --ssl-key ~/localhost-key.pem",
+    "start": "ng serve --watch --hmr --port=4201 --ssl=true --ssl-cert ~/localhost.pem --ssl-key ~/localhost-key.pem",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "pw:run": "URL=http://localhost:4200 npx playwright test",
