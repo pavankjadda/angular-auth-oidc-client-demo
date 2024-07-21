@@ -12,9 +12,9 @@ export class LogoutComponent implements OnInit {
 	oidcSecurityService = inject(OidcSecurityService);
 
 	ngOnInit(): void {
-		this.oidcSecurityService.logoffAndRevokeTokens(sessionStorage.getItem('configId') ?? '').subscribe(() => {
+		this.oidcSecurityService.logoffAndRevokeTokens().subscribe(() => {
 			// Reset NgRx Stores and Current User object in store
-			sessionStorage.removeItem('configId');
+			sessionStorage.removeItem(sessionStorage.getItem('configId') ?? '');
 		});
 	}
 }
