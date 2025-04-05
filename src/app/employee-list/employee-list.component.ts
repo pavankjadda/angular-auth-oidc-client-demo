@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { EmployeeService } from '../services/employee.service';
 import { Employee } from '../types/Employee';
 import { ViewEmployeeComponent } from '../view-employee/view-employee.component';
 
 @Component({
 	selector: 'app-employee-list',
-	standalone: true,
-	imports: [CommonModule, ViewEmployeeComponent, RouterLink, RouterOutlet],
+	imports: [CommonModule, ViewEmployeeComponent, RouterLink],
 	template: `
 		<h2>Employees</h2>
 		<div *ngFor="let employee of employees()">

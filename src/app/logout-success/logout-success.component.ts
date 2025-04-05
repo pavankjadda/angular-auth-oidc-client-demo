@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 
 @Component({
 	selector: 'app-logout-success',
-	standalone: true,
 	imports: [],
 	template: `
 		<h1>Logout</h1>

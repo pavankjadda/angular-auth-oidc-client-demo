@@ -4,7 +4,6 @@ import { RouterLink } from '@angular/router';
 
 @Component({
 	selector: 'app-new-employee',
-	standalone: true,
 	imports: [CommonModule, RouterLink],
 	template: `
 		<h2>Create New Employee</h2>

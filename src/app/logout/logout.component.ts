@@ -3,7 +3,6 @@ import { OidcSecurityService } from 'angular-auth-oidc-client';
 
 @Component({
 	selector: 'app-logout',
-	standalone: true,
 	imports: [],
 	template: ` <p>Please wait...</p> `,
 	styles: ``,

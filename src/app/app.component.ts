@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EventTypes, OidcSecurityService, PublicEventsService } from 'angular-auth-oidc-client';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { filter } from 'rxjs';
@@ -10,8 +9,7 @@ import { filter } from 'rxjs';
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss'],
-	standalone: true,
-	imports: [CommonModule, RouterOutlet, EmployeeListComponent, RouterLink],
+	imports: [CommonModule, RouterOutlet, RouterLink],
 })
 export class AppComponent implements OnInit {
 	oidcSecurityService = inject(OidcSecurityService);

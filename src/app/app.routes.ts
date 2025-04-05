@@ -5,7 +5,7 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { LogoutComponent } from './logout/logout.component';
 import { LogoutSuccessComponent } from './logout-success/logout-success.component';
 
-export const routes: Routes = [
+export const appRoutes: Routes = [
 	{
 		path: '',
 		component: EmployeeListComponent,

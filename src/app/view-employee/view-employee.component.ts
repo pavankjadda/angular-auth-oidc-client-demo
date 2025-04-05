@@ -4,7 +4,6 @@ import { Employee } from '../types/Employee';
 
 @Component({
 	selector: 'app-view-employee',
-	standalone: true,
 	imports: [CommonModule],
 	template: `
 		<p>First Name: {{ employee?.firstName }}</p>
